@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    border: 0;
+}
+.data::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+.loader {
+    display: block;
+    height: 100px;
+}
+.status {
+    height: 400px;
+    background-color: #f5f5f5;
+    border: solid 1px #f5f5f5;
+}
+.write {
+    font-size: 23px;
+    margin: 60px 0px 0px 10px;
+}
+.input {
+    height: 200px;
+    background-color: white;
+    display: block;
+    margin: 2px 10px 10px 10px;
+    width: 334px;
+}
+.submit {
+    box-sizing: content-box;
+    background-color: red;
+    padding: 13px 45px;
+    margin: 10px;
+    position: relative;
+    bottom: -10px;
+    right: -196px;
+    font-size: 25px;
+
+
+}
+div.header {
+    display: block;
+    height: 80px;
+    margin: 0px 0px 10px 0px;   
+}
+.logo {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 13.89%;
+    display: inline-block;
+
+}
+.logo_img {
+    height: 75px;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.text {
+    float: left;
+    position: relative;
+}
+.logo_un {
+    z-index: 4;
+    position: relative;
+    left: -5px;
+    top: -2px;
+}
+.logo_gineering {
+    position: relative;
+    left: -11px;
+    top: -2px;
+}
+.tagline {
+    position: relative;
+    top: -20px;
+    left: 58px;
+}
+.login_tab {
+    border: solid 1.5px red;
+    border-radius: 3px;
+    width: 30%;
+    display: inline-block;
+    float: left;
+    font-size: 24px;
+    box-sizing: content-box;
+    text-align: center;
+    margin: 25px 10px 20px 30px;
+    padding: 8px 15px;
+}
+.new_user_tab {
+    border: solid 1px red;
+    width: 30%;
+    float: left;
+    display: inline-block;
+    font-size: 24px;
+    box-sizing: content-box;
+    padding: 8px 15px;
+    background-color: red;
+    margin: 25px 20px 20px 5px;
+    text-align: center;
+}
+.data {
+    display: block;
+    margin: 10px 10px 10px 10px;
+    border: solid 1px #979797;
+    border-radius: 10px;
+    height: 430px;
+    padding: 10px 20px 10px 20px;
+}
+.footer {
+    display: block;
+    margin: 150px 0px 0px 0px;
+    height: 300px;
+    background-color: #444444;
+}
+div > h2 {
+    color: #444443;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+.b {
+    color: #676767;
+    font-size: 21px;
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+.absolute {
+    color: #676767;
+    font-size: 19px;
+    position: absolute;
+    left: 96px; 
+    font-style: italic;
+}
+.relative {
+    position: relative;
+    top: 50px;
+    left: 30px;
+    font-size: 22px;
+    
+}
+.abso {
+    position: relative;
+    top: 200px;
+    text-align: right;
+    font-size: 18px;
+    right: 10px;
+}
