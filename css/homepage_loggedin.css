@@ -83,25 +83,23 @@ div.header {
 .login_tab {
     border: solid 1.5px red;
     border-radius: 3px;
-    width: 30%;
+    width: 50%;
     display: inline-block;
     float: left;
     font-size: 24px;
-    box-sizing: content-box;
     text-align: center;
     margin: 25px 10px 20px 30px;
-    padding: 8px 15px;
+    padding: 9px 10px 9px 10px;
 }
 .new_user_tab {
     border: solid 1px red;
-    width: 30%;
-    float: left;
+    width: 20%;
     display: inline-block;
     font-size: 24px;
     box-sizing: content-box;
-    padding: 8px 15px;
+    padding: 9.5px 15px;
     background-color: red;
-    margin: 25px 20px 20px 5px;
+    margin: 25px 10px 20px 15px;
     text-align: center;
 }
 .data {
