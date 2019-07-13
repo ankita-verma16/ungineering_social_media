@@ -1,3 +1,74 @@
+body {
+    margin: 0;
+    border: 0;
+}
+
+.row{
+   
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+    
+}
+
+.col {
+   
+    float: left;
+    box-sizing:border-box;
+}
+
+.width{
+    margin:0px 5px 0px 5px;
+    color:#373737;
+}
+
+.loader {
+    display: block;
+    height: 100px;
+}
+div.header {
+    display: block;
+    margin: 0px 0px 10px 0px;   
+}
+.logo {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 13.89%;
+    display: inline-block;
+
+}
+.logo_img {
+    height: 55px;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.text {
+    font-size:15px;
+    float: left;
+    position: relative;
+}
+.logo_un {
+    z-index: 4;
+    position: relative;
+    left: -5px;
+    top: -11px;
+}
+.logo_gineering {
+    position: relative;
+    left: -11px;
+    top: -11px;
+}
+.tagline {
+    position: relative;
+    top: -30px;
+    left: 43px;
+}
+
 .row{
     
     box-sizing: border-box;
@@ -30,7 +101,7 @@
    
     
     width:50%;
-    padding:35px 15px 5px 20px;
+    padding:20px 15px 5px 20px;
     font-size:20px;
     font-weight:bold;
     background-color:white;
@@ -40,7 +111,7 @@
    
     
     width:50%;
-    padding:15px 0px 5px 50px;
+    padding:0px 0px 0px 50px;
     font-size:20px;
     font-weight:bold;
     background-color:white;
@@ -153,11 +224,11 @@ input[type=text],input[type=password]{
 }    
 
 .row11>.c1{
-    width:40px;
+    width:30px;
 }
 
 .row11>.c2{
-    width:40px;
+    width:30px;
 }
 
 .image{
@@ -168,7 +239,7 @@ input[type=text],input[type=password]{
     
   
     color:white;
-    padding:60px 5px 0px 90px;
+    padding:40px 5px 0px 90px;
     background-color:#373737;
     
 }    
@@ -176,7 +247,7 @@ input[type=text],input[type=password]{
 .row13{
     
    
-    padding:0px 0px 40px 150px;
+    padding:0px 0px 60px 150px;
     color:white;
     background-color:#373737;
     
