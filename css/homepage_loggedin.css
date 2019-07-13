@@ -57,7 +57,7 @@ div.header {
     right: -50px;
 }
     
-.login_tab {
+.dashboard_tab {
     border: solid 1.5px red;
     border-radius: 3px;
     width: 45%;
@@ -69,7 +69,7 @@ div.header {
     margin: 8px 5px 15px 8px;
 
 }
-.new_user_tab {
+.logout_tab {
     border: solid 1px red;
     width: 42%;
     float: left;
