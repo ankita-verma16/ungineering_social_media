@@ -1,5 +1,11 @@
+body {
+    margin: 0;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .row{
-    
+   
     box-sizing: border-box;
 }
 
@@ -7,41 +13,99 @@
     content: "";
     display: block;
     clear: both;
-    
 }
 
 .col {
-    
     float: left;
     box-sizing:border-box;
 }
 
 .width{
-        margin:0px 5px 0px 5px;
-        color:#373737;
+    margin:0px 5px 0px 5px;
+    color:#373737;
+}
+
+.loader {
+    display: block;
+    height: 100px;
+}
+div.header {
+    display: block;
+    margin: 0px 0px 10px 0px;   
+}
+.logo {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 13.89%;
+    display: inline-block;
+
+}
+.logo_img {
+    height: 55px;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.text {
+    font-size:15px;
+    float: left;
+    position: relative;
+}
+.logo_un {
+    z-index: 4;
+    position: relative;
+    left: -5px;
+    top: -11px;
+}
+.logo_gineering {
+    position: relative;
+    left: -11px;
+    top: -11px;
+}
+.tagline {
+    position: relative;
+    top: -30px;
+    left: 43px;
+}
+
+.row{
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    box-sizing:border-box;
+}
+
+.width{
+    margin:0px 5px 0px 5px;
+    color:#373737;
 }
 
 .row1{
-   
     height:10%;
 }
 
 .row2 >.c1{
-   
-    
+    text-align:left;
     width:50%;
-    padding:35px 15px 5px 20px;
-    font-size:20px;
+    padding:20px 20px 0px 20px;
+    font-size:15px;
     font-weight:bold;
     background-color:white;
 }
 
 .row2 >.c2{
-   
-    
+    text-align:right;
     width:50%;
-    padding:15px 0px 5px 50px;
-    font-size:20px;
+    padding:0px 20px 0px 20px;
+    font-size:15px;
     font-weight:bold;
     background-color:white;
 }
@@ -55,74 +119,62 @@
 }
 
 .first{
-  
     border: solid 1px #E6E6E6;
 }
 
 .second{
-
     background-color:#f7f7f7;
     border:solid 1px #E6E6E6;
-    font-weight:bold;
+    padding:0px 20px 0px 20px;
+    font-size:13px;
 }
 
 .row3{
-    
     font-family: "Open Sans",sans-serif;
     font-size:15px;
-    padding:10px 40px 0px 30px;
+    padding:10px 0px 0px 0px;
     font-weight:bold;
     font-style: normal
 }
 
 .row4{
-    
-    
-    padding:0px 40px 5px 30px;
-    
-    
+    padding:0px 0px 5px 0px;
+    font-weight:bold;
 }
 
 .row5{
-    
-    
-    padding:20px 40px 5px 30px;
-    
+    padding:0px 0px 5px 0px;
+    font-weight:bold;
 }
 
 .row6{
-   
-    
-    padding:20px 40px 5px 30px;
-    
+   padding:0px 0px 5px 0px;
+   font-weight:bold;
 }
+
 .row7{
-   
-    
-    padding:20px 40px 5px 30px;
-   
-    
+   padding:0px 0px 20px 0px;
+   font-weight:bold;
 }
 
 .row8{
-    
-    
-    padding:10px 40px 5px 30px;
+    border:solid 1px red;
+    border-radius:3px;
     
 }
 
 .row8>a{
-    width:60%;
-    padding:20px 80px 5px 30px;
+    width:100%;
     display:inline-block;
-    line-height:1;
+    line-height:2;
     text-align:center;
     color:#fefefe;
     background-color:#EB453D;
+    text-decoration:none;
 }
 
 .row9{
-    padding:5px 10px 60px 30px;
+    padding:15px 0px 60px 0px;
 }    
 
 .row9>a{
@@ -131,33 +183,31 @@
 
 input[type=text],input[type=password]{
     border:solid 1px red;  
-    height:30px;
+    height:40px;
     width:100%;
+    border-radius:5px;
 }
 
+.footer{
+     padding:30px 25px 0px 25px;
+     background-color:#373737;
+     font-size:13px;
+}
 
 .row10{
-    
     color:white;
-    background-color:#373737;
-    padding:30px 10px 5px 35px;
-  
 }    
 
 .row11{
-    
-    
     color:white;
-    background-color:#373737;
-    padding:5px 10px 5px 35px;
 }    
 
 .row11>.c1{
-    width:40px;
+    width:30px;
 }
 
 .row11>.c2{
-    width:40px;
+    width:30px;
 }
 
 .image{
@@ -165,19 +215,15 @@ input[type=text],input[type=password]{
 }
 
 .row12{
-    
-  
     color:white;
-    padding:60px 5px 0px 90px;
+    padding:40px 0px 0px 0px;
     background-color:#373737;
-    
+    text-align:right;
 }    
 
 .row13{
-    
-   
-    padding:0px 0px 40px 150px;
+    padding:0px 0px 60px 0px;
     color:white;
     background-color:#373737;
-    
+    text-align:right;
 }    
