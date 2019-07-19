@@ -10,11 +10,11 @@
     $name=$_POST['name'];
     $email=$_POST['email'];   
     $password=$_POST['password'];
-    $sql="INSERT INTO users(name,email,password,confirm_password) VALUES ('$name','$email','$password','$confirm_password')";
+    $sql="INSERT INTO users(name,email,password) VALUES ('$name','$email','$password')";
     $result=mysqli_query($conn,$sql);
     if(! $result){
             die("Error:".$sql."<br/>".mysqli_error($conn));
     }
-    echo "Registration Successful";
+    echo "Registration successful";
     mysqli_close($conn);
 ?>     
