@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,14 +27,39 @@
                 </div>
             </div>
         </div>
-        <div class = "header">
-            <div class = "login_tab"; style = "color: rgb(240, 76, 77)">
-                    <a class = "login_reference" href = "login_grid.html"> Login </a>
-            </div>
-            <div class = "new_user_tab"; style = "color: white">
-                <a class = "register_reference" href = "register_sm.html"> New user </a>
-            </div>
-        </div>
+        <?php
+            if(!isset($_SESSION['id'])) {
+                ?>
+                <div class = "header">
+                    <div class = "login_tab"; style = "color: rgb(240, 76, 77)">
+                            <a class = "login_reference" href = "login_grid.html"> Login </a>
+                    </div>
+                    <div class = "new_user_tab"; style = "color: white">
+                        <a class = "register_reference" href = "register_sm.html"> New user </a>
+                    </div>
+                </div>
+                <?php
+            }
+            else {
+                ?>
+                <div class = "header">
+                    <div class = "dashboard_tab"; style = "color: red">
+                            <a href = "homepage_loggedin.html"><b> My Dashboard </b></a>
+                    </div>
+                    <div class = "logout_tab"; style = "color: white">
+                        <a href = "homepage.html"> Logout </a>
+                    </div>
+                </div>
+                <div class = "status">
+                    <div> 
+                        <p class = "write"; style = "color: #505050"> <b> Write something here </b> <p>
+                    </div>
+                    <textarea class = "input"> </textarea>
+                    <a class = "submit"; style = "color: white"> Post </a>
+                </div>
+                <?php
+            }
+        ?>        
         <div class = "data">
             <div class = "a">
                 <p><b> Name </b></p>
