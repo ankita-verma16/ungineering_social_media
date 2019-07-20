@@ -1,12 +1,19 @@
 <?php
+    session_start();
+?>
+<?php
     $hostname="127.0.0.1";
     $username="root";
     $db_password="saloni123";
     $db_name="social_media";
     
+    $response = array();
     $conn=mysqli_connect($hostname,$username,$db_password,$db_name);
     if(!$conn){
-        die("connection failed:".mysqli_connect_error());
+        $response['success'] = false;
+        $response['message'] = "Connection failed: " . mysqli_connect_error();
+        echo json_encode($response);
+        exit();
     }
     
     
@@ -16,8 +23,12 @@
     $sql="SELECT * FROM users";    
     $result=mysqli_query($conn,$sql);
     if(! $result){
-        die("Error:".$sql."<br/>".mysqli_error($conn));
+        $response['success'] = false;
+        $response['message'] = "Error: " . $sql . "<br>" . mysqli_error($conn);
+        echo json_encode($response);
+        exit();
     }
+    
     $check=0;
     
     while ($row=mysqli_fetch_array($result)){
@@ -27,13 +38,17 @@
         }
     }
     if($check==1) {
-        echo "Hello!" .$row['name']."</br>";
+        $_SESSION['id']=$row['id'];
+        $_SESSION['name']=$row['name'];
+        $response['success'] = true;
+        $response['message'] = "Hello " . $row['name'];
         
     } else {  
-        echo "invalid user";
+        $response['success'] = false;
+        $response['message'] = "Login failed";
     }
     
-    
+    echo json_encode($response);
     mysqli_close($conn);
     
 ?>
