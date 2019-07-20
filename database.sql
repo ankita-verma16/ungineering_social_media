@@ -23,4 +23,4 @@ create table statuses(
 
 ALTER TABLE statuses MODIFY user_id int NOT NULL;
 
-ALTER TABLE users MODIFY phone_no varchar(255) NOT NULL;
+ALTER TABLE users MODIFY phone_no varchar(255) NULL;
