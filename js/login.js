@@ -29,7 +29,7 @@ var registration_success = function (response) {
 
     if (response.success) {
         alert(response.message);
-        window.location.href = "homepage_loggedin.html";
+        window.location.href = "/";
     } else {
         alert(response.message);
     }
@@ -40,7 +40,7 @@ var login_success = function (response) {
 
     if (response.success) {
         alert(response.message);
-        window.location.href = "homepage_loggedin.html";
+        window.location.href = "/";
     } else {
         alert(response.message);
     }
