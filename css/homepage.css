@@ -190,10 +190,9 @@ div.header {
 .submit {
     box-sizing: content-box;
     background-color: red;
-    padding: 13px 45px;
+    padding: 13px 30px;
     margin: 10px;
     position: relative;
-    bottom: -10px;
     right: -196px;
     font-size: 25px;
 }

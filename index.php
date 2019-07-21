@@ -27,39 +27,42 @@
                 </div>
             </div>
         </div>
-        <?php
-            if(!isset($_SESSION['id'])) {
-                ?>
-                <div class = "header">
-                    <div class = "login_tab"; style = "color: rgb(240, 76, 77)">
-                            <a class = "login_reference" href = "login_grid.html"> Login </a>
+        <form id="update_status" method="POST" action="post_status.php">
+            <?php
+                if(!isset($_SESSION['id'])) {
+                    ?>
+                    <div class = "header">
+                        <div class = "login_tab"; style = "color: rgb(240, 76, 77)">
+                                <a class = "login_reference" href = "login_grid.html"> Login </a>
+                        </div>
+                        <div class = "new_user_tab"; style = "color: white">
+                            <a class = "register_reference" href = "register_sm.html"> New user </a>
+                        </div>
                     </div>
-                    <div class = "new_user_tab"; style = "color: white">
-                        <a class = "register_reference" href = "register_sm.html"> New user </a>
+                    <?php
+                }
+                else {
+                    ?>
+                    <div class = "header">
+                        <div class = "dashboard_tab"; style = "color: red">
+                                <a href = "homepage_loggedin.html"><b> My Dashboard </b></a>
+                        </div>
+                        <div class = "logout_tab"; style = "color: white">
+                            <a href = "homepage.html"> Logout </a>
+                        </div>
                     </div>
-                </div>
-                <?php
-            }
-            else {
-                ?>
-                <div class = "header">
-                    <div class = "dashboard_tab"; style = "color: red">
-                            <a href = "homepage_loggedin.html"><b> My Dashboard </b></a>
+                    <div class = "status">
+                        <div> 
+                            <p class = "write"; style = "color: #505050"> <b> Write something here </b> <p>
+                        </div>
+                        <input type = "textarea" class = "input" name = "status"
+                        >
+                        <input type = "submit" class = "submit" value = "POST" style = "color: white">
                     </div>
-                    <div class = "logout_tab"; style = "color: white">
-                        <a href = "homepage.html"> Logout </a>
-                    </div>
-                </div>
-                <div class = "status">
-                    <div> 
-                        <p class = "write"; style = "color: #505050"> <b> Write something here </b> <p>
-                    </div>
-                    <textarea class = "input"> </textarea>
-                    <a class = "submit"; style = "color: white"> Post </a>
-                </div>
-                <?php
-            }
-        ?>        
+                    <?php
+                }
+            ?>
+        </form>        
         <div class = "data">
             <div class = "a">
                 <p><b> Name </b></p>
@@ -119,5 +122,7 @@
             <div class = "rel"; style = "color: #B5B4B5">Connect with us at</div>
             <div class = "abso"; style = "color: #B5B4B5"> For any questions / doubts, write us at- <br/> <b> queries@ungineering.com </b> </div>
         </div>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/post_status.js"></script>
     </body>
 </html>
