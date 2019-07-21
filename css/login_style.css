@@ -127,15 +127,17 @@ div.header {
     border:solid 1px red;
     border-radius:3px; 
     font-weight:bold;
+    background-color:red;
 }
-.row6>a{
+.submit_button{
     width:100%;
     text-decoration:none;
     display:inline-block;
     line-height:3;
     text-align:center;
     color:#fefefe;
-    background-color:#EB453D;
+    background-color:red;
+    font-size:15px;
 }
 
 .row7{

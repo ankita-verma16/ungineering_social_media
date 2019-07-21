@@ -163,14 +163,15 @@ div.header {
     
 }
 
-.row8>a{
+.submit_button{
     width:100%;
+    text-decoration:none;
     display:inline-block;
-    line-height:2;
+    line-height:3;
     text-align:center;
     color:#fefefe;
-    background-color:#EB453D;
-    text-decoration:none;
+    background-color:red;
+    font-size:15px;
 }
 
 .row9{
