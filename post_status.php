@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include "db_connect.php";
     
     $response = array();
@@ -12,7 +13,7 @@
     }
     $user_id=$_SESSION['id'];
     $status=$_POST['status'];
-    $sql="INSERT INTO statuses(id,status) VALUES ('$user_id', '$status')";
+    $sql="INSERT INTO statuses(user_id,status) VALUES ($user_id, '$status')";
     
     $result=mysqli_query($conn,$sql);
     if(! $result){
