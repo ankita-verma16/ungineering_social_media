@@ -45,10 +45,10 @@
                     ?>
                     <div class = "header">
                         <div class = "dashboard_tab"; style = "color: red">
-                                <a href = "homepage_loggedin.html"><b> My Dashboard </b></a>
+                                <a href = "/"><b> My Dashboard </b></a>
                         </div>
                         <div class = "logout_tab"; style = "color: white">
-                            <a href = "homepage.html"> Logout </a>
+                            <a href = "/"> Logout </a>
                         </div>
                     </div>
                     <div class = "status">
