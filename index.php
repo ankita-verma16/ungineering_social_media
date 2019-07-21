@@ -48,7 +48,7 @@
                                 <a href = "/"><b> My Dashboard </b></a>
                         </div>
                         <div class = "logout_tab"; style = "color: white">
-                            <a href = "/"> Logout </a>
+                            <a href = "logout.php"> Logout </a>
                         </div>
                     </div>
                     <div class = "status">
