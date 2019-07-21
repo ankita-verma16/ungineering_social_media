@@ -12,7 +12,7 @@
     }
     $user_id=$_SESSION['id'];
     $status=$_POST['status'];
-    $sql="INSERT INTO statuses(id,status) VALUES ('$status', '$user_id')";
+    $sql="INSERT INTO statuses(id,status) VALUES ('$user_id', '$status')";
     
     $result=mysqli_query($conn,$sql);
     if(! $result){
